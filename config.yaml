@@ -1,0 +1,14 @@
+--- 
+settings: {
+  epochs: 100
+  batch_size:
+    - 16
+    - 32
+    - 128
+    - 256
+  amount: 133000
+  learning_rate_schedule:
+    - 1e-3
+    - 1e-4
+    - 1e-5
+  }
