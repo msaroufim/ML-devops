@@ -43,3 +43,5 @@ I don't like constantly checking whether my experiments or done so I make sure t
 ```mail -s 'message subject' username@gmail.com <<< 'testing message body' ```
 
 You can also run ```grep``` for some relevant lines in nohup in case you don't want to run the whole thing and customize your input with more useful ```print``` statements
+
+Feel free to use Twilio or any notification from your favorite service
