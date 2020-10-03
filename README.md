@@ -52,3 +52,5 @@ If you want your script to start in 10 min then you can just run
 ```sleep 600 && script.sh```
 
 For more complex time scheduling check out the ```at``` or ```batch``` utility
+
+It's also useful to log the time your script started so just add the ```date``` command in between each command
