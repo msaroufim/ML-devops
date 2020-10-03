@@ -54,3 +54,12 @@ If you want your script to start in 10 min then you can just run
 For more complex time scheduling check out the ```at``` or ```batch``` utility
 
 It's also useful to log the time your script started so just add the ```date``` command in between each command
+
+## Retrain a model everytime you load new data
+Use a cronjob
+
+```crontab -e```
+
+For example, run every minute ```* * * * script.sh```
+
+Customize schedule https://phoenixnap.com/kb/set-up-cron-job-linux
