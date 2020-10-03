@@ -39,4 +39,5 @@ Note that the scripts will run sequentially and for the most part that is OK sin
 I don't like constantly checking whether my experiments or done so I make sure to add the below to the end of any long running script so I get an email notification when everything is done. You can even pass ```nohup.out``` directly in the email body to get everything without having to log back into the server.
 
 ```sudo apt install mailutils```
+
 ```mail -s 'message subject' username@gmail.com <<< 'testing message body' ```
