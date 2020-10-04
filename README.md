@@ -63,3 +63,11 @@ Use a cronjob
 For example, run every minute ```* * * * script.sh```
 
 Customize schedule https://phoenixnap.com/kb/set-up-cron-job-linux
+
+## Tmux or screen to keep track of various sessions
+
+
+## Git LFS
+
+Use Git LFS to keep track of both your checkpoints and code in case your machine gets lost or you get locked out of it
+
