@@ -77,3 +77,12 @@ Use Git LFS to keep track of both your checkpoints and code in case your machine
 ## Monitor Machine and Processes
 
 ```htop``` is amazing - you can use to sort all processes in a tree like fashion, kill them instead of getting the process id via something like ```ps aux | grep processname```. See per core CPU and memory utilization
+
+## SSH port forwarding
+If you'd like to see a Jupyter notebook running on remote on your local machine 
+
+1. remoteuser@remotehost: jupyter notebook --no-browser --port=XXXX
+2. localuser@localhost: ssh -N -f -L localhost:YYYY:localhost:XXXX remoteuser@remotehost
+3. In your browser: localhost:YYYY
+
+Also works great for Tensorboard
