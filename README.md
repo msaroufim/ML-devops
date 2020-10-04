@@ -86,3 +86,49 @@ If you'd like to see a Jupyter notebook running on remote on your local machine
 3. In your browser: localhost:YYYY
 
 Also works great for Tensorboard
+
+# Reproducible work
+
+Both Machine Learning and really any scientific endeavor face a reproducibility crisis. The best references on this topic are [Richard McElreath talk](https://www.youtube.com/watch?v=zwRdO9_GGhY&ab_channel=RichardMcElreath) for science and [Denny Britz blogpost]() for machine learning.
+
+So reproducibility has a few aspects
+1. Reproducible code - solved with ``` git log --pretty=format:'%h' -n 1```
+2. Reproducible data - solved with ```SQL + AWS```
+3. Reproducible runs - solved with ```logging tips from above section```
+4. Reproducible environments - solved with ```pip, pytest and circleci```
+
+Thankfully there are simple solutions for 1, 2, 3 - namely git.
+
+If your code and data are version controlled and you create logs for your run which you also version control then ``` git log --pretty=format:'%h' -n 1``` will solve most of your problems.
+
+So I want to talk more about reproducible environments 4
+
+## Reproducible environments
+Reproducible environments also has a few subproblems but the main goal is to make sure if you run your code from last week or if your collaborator wants to run your code then your results would remain consistent.
+
+First step is to create a virtual environment for your project
+
+```python3 -m venv yourvenv```
+
+While developing you're going to be ```pip install ...``` a bunch of stuff
+
+Once you're done make sure to run
+
+```pip freeze > requirements.txt``` to keep track of the all dependencies your project has. Trust me this will save you a lot of time and heartache.
+
+Tests in python are simple to setup
+
+```pip install pytest pytest-cov```
+
+```python
+# in file test_library.py
+import your_library
+
+class TestLibrary:
+    def test_function(self):
+        assert expected_result = your_library.your_library_function(input1)
+```
+
+```pytest -v --cov```
+
+This will solve 99% of your reproducibility problems, once your code needs to make it in production you can look into continuous integration by building your code in a docker container and automatically checking if your code passes.
