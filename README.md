@@ -31,6 +31,8 @@ To avoid these problems make sure to run ```nohup sample_runner.sh &```
 
 Now you can freely close your laptop if you're working with some remote host like AWS
 
+
+
 To inspect your results you can use ```tail -f nohup.out``` to inspect it live, otherwise just open ```nohup.out``` with your favorite text editor
 
 Note that the scripts will run sequentially and for the most part that is OK since you want to use the full resources of any machine you're on. If you're interested in more distributed work there are frameworks that help you do this.
@@ -72,3 +74,6 @@ Think of this as nohup on steroids, cheat sheet here https://tmuxcheatsheet.com/
 
 Use Git LFS to keep track of both your checkpoints and code in case your machine gets lost or you get locked out of it
 
+## Monitor Machine and Processes
+
+```htop``` is amazing - you can use to sort all processes in a tree like fashion, kill them instead of getting the process id via something like ```ps aux | grep processname```. See per core CPU and memory utilization
