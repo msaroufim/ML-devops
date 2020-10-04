@@ -65,6 +65,7 @@ For example, run every minute ```* * * * script.sh```
 Customize schedule https://phoenixnap.com/kb/set-up-cron-job-linux
 
 ## Tmux or screen to keep track of various sessions
+Think of this as nohup on steroids, cheat sheet here https://tmuxcheatsheet.com/
 
 
 ## Git LFS
