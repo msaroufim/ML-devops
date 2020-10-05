@@ -141,3 +141,14 @@ ssh-add .ssh/id_rsa
 ssh-copy-id -i .ssh/id_rsa.pub remoteuser@remoteserver
 ssh -vvv -i .ssh/id_rsa remoteuser@remoteserver
 ```
+
+## VSCode instead of VIM
+With VS code you can SSH into into a remote server and mount it locally so you can use the same dev environment locally as you do remotely
+
+In particular the Python debugger is pretty great when you want to set breakpoints and inspect the values of objects
+
+Cmd Shift P and select the Python interpreter you want then go to ```launch.json``` and create a new launch config for your script where 
+
+Setup up a program with the link to the file you want to start in and then you can pass in all the args you need as an array
+
+Example here https://twitter.com/marksaroufim/status/1298044117973233665
