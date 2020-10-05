@@ -132,3 +132,12 @@ class TestLibrary:
 ```pytest -v --cov```
 
 This will solve 99% of your reproducibility problems, once your code needs to make it in production you can look into continuous integration by building your code in a docker container and automatically checking if your code passes.
+
+## Passwords suck
+```sh
+ssh-keygen -t rsa
+eval `ssh-agent`
+ssh-add .ssh/id_rsa
+ssh-copy-id -i .ssh/id_rsa.pub remoteuser@remoteserver
+ssh -vvv -i .ssh/id_rsa remoteuser@remoteserver
+```
