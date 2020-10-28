@@ -154,24 +154,24 @@ Setup up a program with the link to the file you want to start in and then you c
 Example here https://twitter.com/marksaroufim/status/1298044117973233665
 
 ## Favorite linux utilities
-Xarg lets shell commands accept input from stdin - 1? Echo {one two three} | xargs mkdir
-Sort and cut also useful
-1>&2 is a trick to redirect stdout to stderr - print both to console and file
-Htop | Awk ‘{print $1}’ prints the 1 column - very practical 
+* Xarg lets shell commands accept input from stdin - 1? ```Echo {one two three} | xargs mkdir```
+* Sort and cut also useful
+* ```1>&2``` is a trick to redirect stdout to stderr - print both to console and file
+```Htop | Awk ‘{print $1}’``` prints the 1 column - very practical 
 printenv 
-Cnrl-x Cnrtl-e to start editing command in CLI in vim 
-Run a command until it succeeds while true do ping google.com 2>&1 && break done;
-Record command line session: script
-Cd - 
-Pushd and popd to save and pop directories
-Df -h to get file size in human readable format
-Diff command between 2 files
-History then !line_number to run that command without retyping
-Tmux cheat sheet https://tmuxcheatsheet.com/ 
-Tmux ls 
-Tmux attach -t session
-Cntrl b q to switch panes
-Cntrl b %, “ to split panes
-Rsync is a private owned dropbox
-Yes command yes | sudo apt-get install package
+* ```Cnrl-x Cnrtl-e``` to start editing command in CLI in vim 
+* Run a command until it succeeds ```while true do ping google.com 2>&1 && break done;```
+* Record command line session: ```script```
+* ```Cd -``` 
+* ```Pushd and popd``` to save and pop directories
+* ```Df -h``` to get file size in human readable format
+* ```Diff``` command between 2 files
+* History then !line_number to run that command without retyping
+* Tmux cheat sheet https://tmuxcheatsheet.com/ 
+    * Tmux ls 
+    * Tmux attach -t session
+    * Cntrl b q to switch panes
+    * Cntrl b %, “ to split panes
+* ```Rsync``` is a private owned dropbox
+* Yes command ```yes | sudo apt-get install package``` in case you're brave and want to step away from your machine
 
