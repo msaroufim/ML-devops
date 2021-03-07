@@ -87,6 +87,14 @@ If you'd like to see a Jupyter notebook running on remote on your local machine
 
 Also works great for Tensorboard
 
+# Fast deployment and profiling 
+(Pytorch only)
+1. deploy using Flask and ngrok
+2. Trace with torch.fx https://pytorch.org/tutorials/intermediate/fx_profiling_tutorial.html
+3. Use trace to profile with chrome://tracing
+
+https://colab.research.google.com/drive/1t0fnm1GMpYkrGH9UDizIv2lo2_JlZ6sU?usp=sharing
+
 # Reproducible work
 
 Both Machine Learning and really any scientific endeavor face a reproducibility crisis. The best references on this topic are [Richard McElreath talk](https://www.youtube.com/watch?v=zwRdO9_GGhY&ab_channel=RichardMcElreath) for science and [Denny Britz blogpost]() for machine learning.
