@@ -161,6 +161,9 @@ Setup up a program with the link to the file you want to start in and then you c
 
 Example here https://twitter.com/marksaroufim/status/1298044117973233665
 
+![image](https://user-images.githubusercontent.com/3282513/110737305-fdc36d80-81e1-11eb-969b-dd9b708baca8.png)
+
+
 ## Favorite linux utilities
 * Xarg lets shell commands accept input from stdin - 1? ```Echo {one two three} | xargs mkdir```
 * Sort and cut also useful
