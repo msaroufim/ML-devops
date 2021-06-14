@@ -8,6 +8,9 @@ ML is a highly empirical discipline so the more experiments you can launch, the 
 2. Print at the arguments you're using for an experiment and in your ML code make sure to log data either via tensorboard or manual print statements
 4. Run lots of experiments at once then come back end of day to see what worked
 
+### Favorite tools
+VS Code, tmate, hydra, weights and biases, docker, gradio, github actions and git-lfs - video covering all of these tools [here](https://www.youtube.com/watch?v=jmd-U-myaQY)
+
 ## CLI vs YAML
 
 CLI is actually the simplest method sine you just need to then create a shell script where you put all the commands you'd like to run
